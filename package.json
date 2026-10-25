@@ -2,8 +2,9 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev --turbopack",
-    "start": "next start"
+    "dev": "NODE_OPTIONS='--network-family-autoselection-attempt-timeout=5000' next dev --turbopack",
+    "start": "next start",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -27,6 +28,7 @@
     "@types/node": "22.10.7",
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
+    "baseline-browser-mapping": "^2.11.31",
     "eslint": "^10.13.0",
     "eslint-config-next": "^16.4.2"
   }
